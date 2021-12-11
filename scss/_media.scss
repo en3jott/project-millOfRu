@@ -1,0 +1,275 @@
+@media (max-width: 1450px) {
+  .top {
+    &:after {
+      display: none;
+    }
+    &__inner {
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__title::before {
+      left: 40%;
+    }
+    &__form {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .header {
+    z-index: 101;
+    &__logo {
+      z-index: 101;
+    }
+    &__burger {
+      position: relative;
+      display: block;
+      width: 34px;
+      height: 22px;
+    }
+    &__burger span {
+      position: absolute;
+      top: 9px;
+      right: 0;
+      background-color: #000;
+      width: 34px;
+      height: 4px;
+      border-radius: 5px;
+      transition: all 0.3s ease 0s;
+    }
+    &__burger::after,
+    &__burger::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      background-color: #000;
+      width: 34px;
+      height: 4px;
+      border-radius: 5px;
+      transition: all 0.3s ease 0s;
+    }
+    &__burger::before {
+      top: 0;
+    }
+    &__burger::after {
+      bottom: 0;
+    }
+    &__burger.active span {
+      transform: scale(0);
+    }
+    &__burger.active:before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+    &__burger.active:after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+    }
+    &__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 180px;
+      background-color: #fffdee;
+      z-index: 100;
+      margin: 0 auto;
+      transition: all 0.3s ease 0s;
+      padding: 20px 20px 20px 20px;
+    }
+    &__menu.active {
+      top: 86px;
+    }
+    &__menu-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__menu-item {
+      display: block;
+    }
+    &__info {
+      display: none;
+    }
+    &__social {
+      margin: 0 0 20px 0px;
+    }
+    &__social-list {
+      justify-content: center;
+    }
+    &__contact {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .about {
+    &__title {
+      text-align: center;
+    }
+    &__title:after {
+      display: none;
+    }
+    &__box {
+      display: block;
+      width: 100%;
+    }
+    &__box-img {
+      width: 100%;
+    }
+    &__box-text {
+      width: 100%;
+    }
+    &__img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 25px;
+    }
+  }
+  .map {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    &__title {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .info {
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .footer {
+    &__inner {
+      flex-direction: column;
+    }
+    &__logo {
+      margin-bottom: 20px;
+    }
+   }
+}
+@media (max-width: 550px) {
+  .top {
+    &__inner {
+      max-width: 350px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__title::before {
+      left: 31%;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__box {
+      display: block;
+    }
+    &__box-text {
+      font-size: 14px;
+      margin-bottom: 15px;
+      padding-left: 0;
+    }
+    &__box-text:first-child::before,
+    &__box-text:last-child::before {
+      display: none;
+    }
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__form-input {
+      margin: 0;
+    }
+    &__form-btn {
+      margin-top: 20px;
+      padding: 25px 45px;
+    }
+  }
+  .about {
+    &__inner {
+      margin-top: 55px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  .product {
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    &__inner {
+      gap: 20px;
+    }
+    &__item-title {
+      font-size: 18px;
+    }
+    &__item {
+      display: block;
+      width: 100%;
+    }
+  }
+  .work {
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .info {
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .certificate {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .top {
+    &__form-custom-input {
+      &:before {
+        left: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .top {
+    &__form-custom-input {
+      &:before {
+        left: 30px;
+      }
+    }
+  }
+}

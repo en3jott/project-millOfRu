@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #131212;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.header {
+  @extend %rubik-400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  @extend %rubik-700;
+  font-size: 42px;
+  line-height: 1.5;
+  text-align: center;
+}
